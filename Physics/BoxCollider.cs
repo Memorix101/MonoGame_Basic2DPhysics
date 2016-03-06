@@ -15,6 +15,8 @@ namespace MonoGame_Basic2DPhysics
         public Sprite sprite;
         Texture2D texture;
         Color color = Color.Purple;
+        int strokeDepth = 2;
+        float alpha = 1f;
 
         public BoxCollider(Sprite s)
         {
@@ -65,7 +67,11 @@ namespace MonoGame_Basic2DPhysics
 
         public virtual void DebugDraw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, SpriteBoundingBox, new Rectangle(0, 0, texture.Width, texture.Height), color*0.5f);
+            //spriteBatch.Draw(texture, SpriteBoundingBox, new Rectangle(0, 0, texture.Width, texture.Height), color*0.5f);
+            spriteBatch.Draw(texture, new  Rectangle((int)position.X, (int)position.Y, rect.Width, strokeDepth), new Rectangle(0, 0, 5, 5), color * alpha); // Top
+            spriteBatch.Draw(texture, new Rectangle((int)position.X, (int)position.Y, strokeDepth, rect.Height), new Rectangle(0, 0, 5, 5), color * alpha); // Left
+            spriteBatch.Draw(texture, new Rectangle((int)position.X + rect.Width, (int)position.Y, strokeDepth, rect.Height), new Rectangle(0, 0, 5, 5), color * alpha);  //Right
+            spriteBatch.Draw(texture, new Rectangle((int)position.X, (int)position.Y + rect.Height, rect.Width, strokeDepth), new Rectangle(0, 0, 5, 5), color * alpha); // Down
         }
     }
 }
