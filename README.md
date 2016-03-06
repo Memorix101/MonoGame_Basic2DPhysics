@@ -1,6 +1,5 @@
 # MonoGame_Basic2DPhysics
 I made the project to show how to get started with basic 2D physics
 
-![screenshot 34](https://cloud.githubusercontent.com/assets/1466920/13549903/de67a1ba-e310-11e5-8a5e-4eba17b515c7.png)
-![screenshot 33](https://cloud.githubusercontent.com/assets/1466920/13549904/de67d8b0-e310-11e5-9aa6-a11b4d2e70a2.png)
-
+![screenshot 36](https://cloud.githubusercontent.com/assets/1466920/13551886/3974d6d0-e349-11e5-97b3-2b6b6e1f7eb8.png)
+![screenshot 35](https://cloud.githubusercontent.com/assets/1466920/13551887/39893ff8-e349-11e5-9c65-1a291a21a6f1.png)
